@@ -16,3 +16,6 @@ venv/
 
 # Models dir
 modelserving/models/*
+!modelserving/models/.gitkeep 
+
+
