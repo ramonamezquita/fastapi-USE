@@ -11,6 +11,12 @@ which include,
 | modelserving |   Model inference service   | 8501 |
 
 
+The final user interacts only with the `webapp` service which in turn propagates
+the user's input to the model inference service. This helps us to keep
+the web application light and responsive while keeping the heavy dependencies
+to the inference service container.
+
+
 # Run project
 First, clone this repo with
 ```
