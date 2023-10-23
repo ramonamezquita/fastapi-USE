@@ -1,0 +1,21 @@
+version: "3"
+services:
+
+  webapp:
+    # Web service built using FastAPI.
+    build: ./webapp
+    container_name: webapp
+    volumes:
+      - ./webapp/app:/home/worker/app
+    ports:
+      - 5000:80
+
+  modelserving:
+  # TensorFlow model serving service.
+  # More details in https://www.tensorflow.org/tfx/serving/docker
+    build: ./modelserving
+    container_name: modelserving
+    expose:
+      - 8501
+    ports:
+      - 8501:8501
