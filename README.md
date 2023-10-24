@@ -14,7 +14,7 @@ which include,
 The final user interacts only with the `webapp` service which in turn propagates
 the user's input to the model inference service. This helps us to keep
 the web application light and responsive while keeping the heavy dependencies
-to the inference service container.
+to where they belong.
 
 
 # Run project
@@ -25,8 +25,8 @@ git clone https://github.com/ramonamezquita/opentable-challenge.git
 
 CD into the project, download and decompress the Universal Sentence Encoder inside `MODELS_DIR`.
 ```
-MODELS_DIR="$(pwd)/modelserving/models/universal-sentence-encoder/01"
 cd opentable-challenge
+MODELS_DIR="$(pwd)/modelserving/models/universal-sentence-encoder/01"
 wget -P $MODELS_DIR 'https://tfhub.dev/google/universal-sentence-encoder/4?tf-hub-format=compressed'
 tar -xvf $MODELS_DIR/4\?tf-hub-format=compressed -C $MODELS_DIR
 rm $MODELS_DIR/4?tf-hub-format=compressed
