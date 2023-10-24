@@ -1,4 +1,4 @@
-FROM emacski/tensorflow-serving:2.5.1
+FROM emacski/tensorflow-serving:latest-linux_arm64
 
 # Copy and mount saved model.
 COPY models /models
