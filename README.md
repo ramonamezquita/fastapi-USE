@@ -39,7 +39,7 @@ Build and run services.
 ```
 docker-compose up
 ```
-
+All set! 🥳
 
 # Endpoints
 Once services are running, go to http://localhost:5000/docs to try out the available endpoints which are
