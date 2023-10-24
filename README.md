@@ -29,6 +29,7 @@ cd opentable-challenge
 MODELS_DIR="$(pwd)/modelserving/models/universal-sentence-encoder/01"
 wget -P $MODELS_DIR 'https://tfhub.dev/google/universal-sentence-encoder/4?tf-hub-format=compressed'
 tar -xvf $MODELS_DIR/4\?tf-hub-format=compressed -C $MODELS_DIR
+rm $MODELS_DIR/4?tf-hub-format=compressed
 ```
 > [!WARNING]  
 > This model is about 1GB. Depending on your network speed, it might take a while.
