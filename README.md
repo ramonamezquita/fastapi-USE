@@ -65,7 +65,7 @@ curl -X POST -H "Content-Type: application/json" -d @payloads/payload_3.json htt
 A collection of unit tests are given for the webapp service (see `webapp/app/test_main.py`). 
 To run them you need to execute `pytest` inside the webapp container with
 ```
-docker exec web pytest app
+docker exec webapp pytest app
 ```
 
 
