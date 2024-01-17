@@ -1,6 +1,4 @@
-# Data Science Coding Challenge
-The purpose of this project is to containerize the solution to the Data Science
-coding test given by OpenTable.
+# FastAPI + Universal Sentence Encoder
 
 A docker-compose.yml file is provided for building the required services
 which include,
@@ -20,7 +18,7 @@ to where they belong.
 # Run project
 First, clone this repo with
 ```
-git clone https://github.com/ramonamezquita/opentable-challenge.git
+git clone https://github.com/ramonamezquita/fastapi-USE.git
 ```
 
 CD into the project, download and decompress the Universal Sentence Encoder inside `MODELS_DIR`.
